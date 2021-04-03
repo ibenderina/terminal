@@ -1,0 +1,49 @@
+.footer {
+  background-color: #3e3e3e;
+
+  &__container {
+    display: flex;
+  }
+
+  &__developer {
+    display: inline-block;
+    position: relative;
+    padding: 20px 10px 20px 70px;
+    color: #fff;
+    text-decoration: none;
+
+    &:before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      top: 0;
+      left: 0;
+      background-size: 80px;
+      width: 80px;
+      height: 80px;
+      background-image: url("/img/cat.svg");
+    }
+
+    &:hover > .footer__developer-text,
+    &:hover > .footer__developer-link {
+      color: pink;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.4;
+    }
+  }
+
+  &__developer-text {
+    color: #fff;
+    line-height: 20px;
+    font-weight: lighter;
+  }
+
+  &__developer-link {
+    display: block;
+    margin-top: 5px;
+    color: #fff;
+  }
+}

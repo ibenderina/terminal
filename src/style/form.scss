@@ -1,0 +1,62 @@
+.form {
+  padding: 15px;
+  margin-bottom: 20px;
+
+  &__text {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  &__description {
+    display: block;
+    color: #333;
+    font-size: 15px;
+    line-height: 24px;
+    opacity: 0.5;
+  }
+
+  &__input-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__input-item {
+    margin-right: 30px;
+    flex-grow: 2;
+    display: block;
+    width: 100%;
+    max-width: 45%;
+  }
+
+  &__label {
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    color: #333;
+    border: 1px solid #d8d8d8;
+    background-color: transparent;
+    padding: 11px 19px;
+
+    &:hover,
+    &:focus {
+      border-color: #333;
+    }
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333;
+    opacity: 0.5;
+  }
+}
